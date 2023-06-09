@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dispositivos"
+        android:enabled="true"
+        android:icon="@drawable/baseline_devices"
+        android:title="Dispositivos" />
+    <item
+        android:id="@+id/manuales"
+        android:enabled="true"
+        android:icon="@drawable/baseline_book"
+        android:title="Manuales" />
+    <item
+        android:id="@+id/cuenta"
+        android:enabled="true"
+        android:icon="@drawable/baseline_account"
+        android:title="Cuenta" />
+    <item
+        android:id="@+id/acerca"
+        android:enabled="true"
+        android:icon="@drawable/baseline_help"
+        android:title="Acerda De Nosotros" />
+</menu>
