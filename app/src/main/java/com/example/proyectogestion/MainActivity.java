@@ -1,6 +1,7 @@
 package com.example.proyectogestion;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -72,7 +73,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.addDevice:
-                        Toast.makeText(MainActivity.this, "Add device", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Add device", Toast.LENGTH_SHORT).show();
+                        Intent myIntent = new Intent(MainActivity.this, AddDevicesActivity.class);
+                        MainActivity.this.startActivity(myIntent);
                         return true;
                     default:
                         return false;
