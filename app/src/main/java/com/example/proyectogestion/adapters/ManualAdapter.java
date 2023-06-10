@@ -1,4 +1,4 @@
-package com.example.proyectogestion;
+package com.example.proyectogestion.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.proyectogestion.models.ManualModel;
+import com.example.proyectogestion.R;
 
 import java.util.ArrayList;
 
@@ -81,7 +84,7 @@ public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ViewHolder
 
         public void setData(String name) {
             _name.setText(name);
-            _img.setImageResource(R.drawable.logo);
+            _img.setImageResource(R.drawable.baseline_book);
         }
     }
 }

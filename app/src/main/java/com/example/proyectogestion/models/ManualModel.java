@@ -1,4 +1,4 @@
-package com.example.proyectogestion;
+package com.example.proyectogestion.models;
 
 public class ManualModel {
 

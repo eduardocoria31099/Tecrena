@@ -1,16 +1,20 @@
-package com.example.proyectogestion;
+package com.example.proyectogestion.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import com.example.proyectogestion.fragments.AboutUsFragment;
+import com.example.proyectogestion.fragments.AccountFragment;
+import com.example.proyectogestion.fragments.DevicesFragment;
+import com.example.proyectogestion.fragments.ManualsFragment;
+import com.example.proyectogestion.R;
 import com.example.proyectogestion.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 

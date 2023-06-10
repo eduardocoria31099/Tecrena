@@ -1,4 +1,4 @@
-package com.example.proyectogestion;
+package com.example.proyectogestion.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,39 +10,41 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.proyectogestion.databinding.FragmentManualsBinding;
+import com.example.proyectogestion.adapters.DeviceAdapter;
+import com.example.proyectogestion.databinding.FragmentDevicesBinding;
+import com.example.proyectogestion.models.DeviceModel;
 
 import java.util.ArrayList;
 
 
-public class ManualsFragment extends Fragment {
+public class DevicesFragment extends Fragment {
 
-    private FragmentManualsBinding binding;
+    private FragmentDevicesBinding binding;
 
-    ManualAdapter manualAdapter;
+    DeviceAdapter deviceAdapter;
     RecyclerView recyclerView;
     LinearLayoutManager layoutManager;
 
-    ArrayList<ManualModel> tablaLocal = new ArrayList<>();
+    ArrayList<DeviceModel> tablaLocal = new ArrayList<>();
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentManualsBinding.inflate(inflater, container, false);
-        initLocalTable();
+        binding = FragmentDevicesBinding.inflate(inflater, container, false);
+        init();
         initRecycler();
+        setListener();
         return binding.getRoot();
     }
 
-    private void initLocalTable() {
-        System.out.println("--->initLocalTable");
-        tablaLocal.add(new ManualModel("Modelo 1"));
-        tablaLocal.add(new ManualModel("Modelo 2"));
-        tablaLocal.add(new ManualModel("Modelo 3"));
-        for (ManualModel manualModel : tablaLocal) {
-            System.out.println("--->LocalTable: " + manualModel.getName());
-        }
 
+    private void init() {
+        tablaLocal.add(new DeviceModel("Device 1"));
+        tablaLocal.add(new DeviceModel("Device 2"));
+        tablaLocal.add(new DeviceModel("Device 3"));
+        tablaLocal.add(new DeviceModel("Device 4"));
+        tablaLocal.add(new DeviceModel("Device 5"));
+        tablaLocal.add(new DeviceModel("Device 6"));
     }
 
     private void initRecycler() {
@@ -53,10 +55,10 @@ public class ManualsFragment extends Fragment {
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
 
-        manualAdapter = new ManualAdapter(tablaLocal);
-        manualAdapter.OnClick(new ManualAdapter.onClick() {
+        deviceAdapter = new DeviceAdapter(tablaLocal);
+        deviceAdapter.OnClick(new DeviceAdapter.onClick() {
             @Override
-            public void OnClick(ManualModel manualModel, int position) {
+            public void OnClick(DeviceModel deviceModel, int position) {
                 try {
                     Toast.makeText(requireContext(), "Aqui va tu pantalla", Toast.LENGTH_SHORT).show();
                 } catch (Exception ex) {
@@ -64,7 +66,10 @@ public class ManualsFragment extends Fragment {
                 }
             }
         });
-        recyclerView.setAdapter(manualAdapter);
-        manualAdapter.notifyDataSetChanged();
+        recyclerView.setAdapter(deviceAdapter);
+        deviceAdapter.notifyDataSetChanged();
+    }
+
+    private void setListener() {
     }
 }

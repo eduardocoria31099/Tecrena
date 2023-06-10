@@ -1,4 +1,4 @@
-package com.example.proyectogestion;
+package com.example.proyectogestion.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

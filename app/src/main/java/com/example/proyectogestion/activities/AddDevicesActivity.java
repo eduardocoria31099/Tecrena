@@ -1,4 +1,4 @@
-package com.example.proyectogestion;
+package com.example.proyectogestion.activities;
 
 import android.os.Bundle;
 import android.view.View;
