@@ -23,10 +23,11 @@ public class DevicesFragment extends Fragment {
         return binding.getRoot();
     }
 
-    private void setListener() {
-    }
 
     private void init() {
 
+    }
+
+    private void setListener() {
     }
 }

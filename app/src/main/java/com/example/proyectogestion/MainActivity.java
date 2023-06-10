@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
         changeFragment(devicesFragment);
     }
-
     private void setListeners() {
 
         binding.bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
