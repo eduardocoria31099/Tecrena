@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Material Theme Colors-->
-    <color name="color_primary">#c79200</color>
+    <color name="color_primary">#647FA8</color>
     <color name="color_primary_variant">#ffc200</color>
     <color name="color_on_primary">#000000</color>
 
     <color name="color_secondary">#d3d3d3</color>
     <color name="color_secondary_variant">#ffffff</color>
     <color name="color_on_secondary">#000000</color>
+
+    <color name="color_new_StatusBar">#272727</color>
+    <color name="color_new_topBar">#536F99</color>
 
 
     <!--Background-->

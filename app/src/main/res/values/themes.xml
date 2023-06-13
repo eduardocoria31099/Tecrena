@@ -42,7 +42,7 @@
         <item name="colorOnError">@color/color_on_error</item>
 
         <!-- Status bar color-->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/color_new_StatusBar</item>
 
     </style>
 

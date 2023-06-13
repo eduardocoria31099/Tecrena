@@ -37,8 +37,8 @@ public class DevicesFragment extends Fragment {
         return binding.getRoot();
     }
 
-
     private void init() {
+        tablaLocal = new ArrayList<>();
         tablaLocal.add(new DeviceModel("Device 1"));
         tablaLocal.add(new DeviceModel("Device 2"));
         tablaLocal.add(new DeviceModel("Device 3"));
